@@ -39,7 +39,7 @@ input[type="text"], input[type="email"], textarea, #message{
     height:80%;
 }
 
-.name-id, .email-id, .message-id
+.name-id, .email-id, .message-id, .photo-id
 {
     font-size: 20px;
     font-weight: bold;
@@ -89,4 +89,32 @@ button[type="submit"]:hover {
     padding-left: 40px;
     padding-bottom: 20px;
     padding-top:20px; 
+}
+
+.reviews-form 
+{ 
+    background-color: #000000 ; 
+}
+
+#review-form 
+{ 
+    background-color: #ccc;
+}
+
+#review-frame .one {
+    flex:1;
+    margin:20px;
+    padding-right: 40px; 
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top:20px; 
+}
+
+#result
+{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left:20px;
+
 }

@@ -1,8 +1,9 @@
 import "../css/Form.css"; 
 import {useState, useEffect } from "react";
 
-export default function Contact() {
+export default function ReviewForm() {
     const [result, setResult] = useState([]);
+    const [isFormVisible, setFormVisible] = useState(true);
 
     const onSubmit = async (event) => {
       event.preventDefault();
@@ -26,13 +27,22 @@ export default function Contact() {
         setResult(data.message);
       }
     };
+
+    const closeForm = () => {
+      setFormVisible(false);
+    };
+    
+    if (!isFormVisible) {
+        return null;
+    }
   
     return (
-        <section className="contact-section"> 
-          <div id="form-frame" class="columns">
+        <section className="reviews-form"> 
+          <div id="review-frame" class="columns">
 
               <form id="review-form" class="one" onSubmit={onSubmit}>
-                <h3> Review Form </h3>
+              <button id="button" type="button" className="close-button" onClick={closeForm}>X</button>
+                {/* <h3> Review Form </h3> */}
                 <label className="name-id">Company Name:</label>
                 <input className = "Company-name" type="text" name="name" required/>
         
@@ -41,12 +51,16 @@ export default function Contact() {
 
                 <label className="name-id">Reviewers Name:</label>
                 <input className = "reviewers-name" type="text" name="name" required/>
-
-                
         
+                {/* <label className="photo-id">Upload Company Photo:</label>
+                <input className="photo-upload" type="file" name="photo" accept="image/*" required/> 
+                Cant do with free version of form */}
+
                 <button id="button" type="submit">Submit Form</button>
+
+                <span id="result" >{result}</span>
               </form>
-              <span>{result}</span>
+              
               
 
           </div>

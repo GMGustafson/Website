@@ -49,9 +49,13 @@ export default function Contact() {
         
                 <button id="button" type="submit">Submit Form</button>
 
+                <span id="result"> {result}</span>
+
                 <p className="order"> If you would like to order or have any questions, please fill out the form and Jennifer Mackin Bruce will get back to you ASAP. </p>
+                
+               
               </form>
-              <span>{result}</span>
+              
               
 
           </div>

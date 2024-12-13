@@ -11,10 +11,12 @@ const Gallery = () => {
     return (
         <div id="background">
             <h1 id="page-heading">Gallery</h1>
-            <div id="gallery-content"> 
-                {images.map((image, index) => (
-                    <img id="gallery" className="columns" src={image} alt={`Gallery image {image}`} />
-                ))}
+            <div> 
+                <div id="gallery-content" className="modal"> 
+                    {images.map((image, index) => (
+                        <img id="gallery"  className= "modal-content columns" src={image} alt={`Gallery image {image}`} />
+                    ))}
+                </div>
             </div>
         </div>
     );

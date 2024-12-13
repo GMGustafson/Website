@@ -26,10 +26,10 @@
     font-size: 23px;
 }
 
-.aboutus-gallery 
+.aboutus-pictures 
 {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     border:3px solid black;
 }
 
