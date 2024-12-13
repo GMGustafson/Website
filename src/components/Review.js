@@ -65,23 +65,16 @@ const Review = (props) => {
             <section className="info">
               <header className="columns">
                 <h3>{review.companyName}</h3>
-                <section id="change-buttons">
-                  <a href="#" onClick={openEditDialog}>
-                    &#9998;
-                  </a>
-                  <a href="#" onClick={openDeleteDialog}>
-                    &#x2715;
-                  </a>
-                </section>
+
               </header>
               <p>"{review.review}"</p>
               <p>
-                Reviewed By: {review.reviewersName} on {review.date.substring(0,review.date.indexOf("T"))} 
+                Reviewed By: {review.reviewersName} on {review.date} 
               </p>
 
               <section >
                 <img id="images"
-                  src={`http://localhost:3003/${review.img}`}
+                  src={`${review.img}`}
                   alt={`Image of ${review.companyName}`}
                 />
               </section>

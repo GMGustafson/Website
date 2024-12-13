@@ -6,7 +6,7 @@ const AboutUs = () => {
         <div id="about-us">
         <h1 id="page-heading">About Us</h1> 
         <div id="about-us1" className="columns">
-            <section className="one"><img className="aboutus-gallery" src = "MPTimages/mom&papa.jpg" /></section>
+            <section className="one"><img className="aboutus-gallery" src = "MPTimages/selfie.jpg" /></section>
             <section id="about-us11" className ="five"> 
                 <p id ="font"> At Mackin Pallet & Trucking, we specialize in buying and selling high-quality pallets with a steadfast commitment to exceptional service. Whether you're looking for reliable pallet solutions or need storage trailers or containers, we’ve got you covered with a range of options for sale or lease. </p>
                 <p id ="font">We’re proud to offer services like same-day delivery to ensure your operations run smoothly.</p>

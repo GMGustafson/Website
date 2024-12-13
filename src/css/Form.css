@@ -18,14 +18,14 @@
     border:5px solid #000000;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], textarea, #message{
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     color:var(--third-color); 
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 25px;
 }
 #form-id
 {
@@ -63,10 +63,10 @@ button[type="submit"]:hover {
 .order
 { 
     text-decoration: none; 
-    color: white; 
+    color: black; 
     display: block;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 
 }
 #name 

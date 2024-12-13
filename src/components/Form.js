@@ -9,7 +9,7 @@ export default function Contact() {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "6cdc2aaa-9309-4d1c-a2e5-0056374202e2");
+      formData.append("access_key", "8d41e6db-b514-4fca-9b31-8fc403e2d817");
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -45,17 +45,18 @@ export default function Contact() {
                 <input type="email" name="email" required/>
 
                 <label className="message-id">Message:</label>
-                <textarea name="message" required></textarea>
+                <textarea id="message" name="message" required></textarea>
         
                 <button id="button" type="submit">Submit Form</button>
-        
+
+                <p className="order"> If you would like to order or have any questions, please fill out the form and Jennifer Mackin Bruce will get back to you ASAP. </p>
               </form>
               <span>{result}</span>
               
 
           </div>
 
-          <p className="order"> If you would like to order or have any questions, please fill out the form and Jennifer Mackin Bruce will get back to you ASAP. </p>
+          
           
         </section>
        

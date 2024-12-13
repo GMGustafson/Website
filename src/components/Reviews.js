@@ -11,7 +11,7 @@ const Reviews = () => {
 
     useEffect(()=>{
         (async() => {
-            const response = await axios.get("http://localhost:3003/api/reviews");
+            const response = await axios.get("json/reviews.json");
             console.log(response.data);
             setReviews(response.data);
         })();
@@ -48,7 +48,7 @@ const Reviews = () => {
                         review = {review.review} 
                         reviewersName = {review.reviewersName}
                         date = {review.date}
-                        img = {review.img}
+                        img = {review.image}
                         /> 
                      ))}
       </div>

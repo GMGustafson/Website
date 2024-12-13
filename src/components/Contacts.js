@@ -8,7 +8,7 @@ const ContactUs = () => {
 
     useEffect(()=>{
         (async() => {
-            const response = await axios.get("http://localhost:3003/api/contacts");
+            const response = await axios.get("json/contacts.json");
             setContacts(response.data);
         })();
     },[]);
@@ -20,12 +20,12 @@ const ContactUs = () => {
                 <div id="contacts" className="columns">
                     {contacts.map(contact => (
                         <section id={contact.id} className="one">
-                            <img id={`${contact.id}-pic`} src={"http://localhost:3003/images/" + contact.image} alt={`${contact.name}'s picture`} />
+                            <img id={`${contact.id}-pic`} src={`${contact.imgSrc}`} alt={`${contact.name}'s picture`} />
                             <section id={`${contact.id}-info`}>
                                 <p id="name">{contact.name}</p>
-                                <p>Position: {contact.position}</p>
-                                <p>Phone Number: {contact.phone}</p>
-                                <p>Email: {contact.email}</p>
+                                <p id="contact-stuff" > {contact.position}</p>
+                                <p id="contact-stuff">{contact.phone}</p>
+                                <p id="contact-stuff">{contact.email}</p>
                             </section>
                         </section>
                     ))}
