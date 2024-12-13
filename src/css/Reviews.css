@@ -30,7 +30,18 @@ p
    max-height: 300px;
    max-width: 200px; 
 }
-
+#add-review
+{
+    background-color: #8a3134;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin-left:20px; 
+}
 .company
 { 
     flex: 20%;

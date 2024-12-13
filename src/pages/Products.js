@@ -44,7 +44,7 @@ const Products = () => {
           <h1>Delivery</h1>
           <p>We only deliver to places within an 55-mile radius of Brockton, MA</p>
           <p>All orders have a delivery cost</p>
-          <iframe> https://www.mapdevelopers.com/draw-circle-tool.php?circles=%5B%5B55630.1%2C42.0713399%2C-70.957583%2C%22%23AAAAAA%22%2C%22%23000000%22%2C0.4%5D%5D </iframe>
+          {/* <iframe> https://www.mapdevelopers.com/draw-circle-tool.php?circles=%5B%5B55630.1%2C42.0713399%2C-70.957583%2C%22%23AAAAAA%22%2C%22%23000000%22%2C0.4%5D%5D </iframe> */}
         </section>
 
         <section id="pricing-delivery" className="two">

@@ -35,10 +35,10 @@ const Reviews = () => {
         <div id="background"> 
             <h1 id="page-heading">Reviews</h1>
 
-            <button id="add-review"onClick={openAddDialog}> Add Review</button>
+            <href id="add-review"onClick={openAddDialog}> Submit Review</href>
             
             {showAddDialog ? (
-                <AddReview closeDialog={closeAddDialog} showNewReview={updateReviews}/> ):("")}
+                <AddReview closeDialog={closeAddDialog} /> ):("")}
       
             <div className="reviews-grid" >
                 {reviews.map((review) => (

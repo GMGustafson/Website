@@ -29,7 +29,7 @@
 .aboutus-pictures 
 {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 75%;
     border:3px solid black;
 }
 
@@ -46,5 +46,9 @@
 
     .one {
         flex:1;
+    }
+
+    .two {
+        flex:2;
     }
 }

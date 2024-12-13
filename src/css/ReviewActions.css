@@ -21,6 +21,24 @@
     color: #7C1A1C; 
 }
 
+#close-button
+{ 
+  position:top;
+  float: right;
+  color: var(--third-color);
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close-button:hover
+{
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+}
+
+
 #img-prev {
   max-width: 100%;
 }

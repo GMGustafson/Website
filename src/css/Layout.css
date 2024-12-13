@@ -23,7 +23,7 @@
     background-color:var(--third-color);
 }
 
-#main-nav a:active {
+.active {
     background-color: var(--third-color);
 }
 #main-nav a
