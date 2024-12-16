@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useLocation } from "react-router-dom";
@@ -23,28 +23,14 @@ const Layout = () => {
             <nav id="main-nav">
                 <div id="hamburger" onClick={toggleNav}>
                     <div></div>
-                    <div></div>
-                    <div></div>
                 </div>
                 <ul id="nav-items" className={`flex-container ${navOpen ? "" : "hide"}`}>
-                    <li className={splitLocation[1] === "" ? "active" : ""}>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li className={splitLocation[1] === "" ? "active" : ""}>
-                        <Link to="/AboutUs">About Us</Link>
-                    </li>
-                    <li className={splitLocation[1] === "" ? "active" : ""}>
-                        <Link to="/ContactUs">Contact Us</Link>
-                    </li>
-                    <li className={splitLocation[1] === "" ? "active" : ""}>
-                        <Link to="/Gallery">Gallery</Link>
-                    </li>
-                    <li className={splitLocation[1] === "" ? "active" : ""}>
-                        <Link to="/Products">Products</Link>
-                    </li>
-                    <li className={splitLocation[1] === "" ? "active" : ""}>
-                        <Link to="/Reviews">Reviews</Link>
-                    </li>
+                    <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/AboutUs" activeClassName="active">About Us</NavLink></li>                
+                    <li><NavLink to="/ContactUs" activeClassName="active">Contact Us</NavLink></li>                 
+                    <li><NavLink to="/Gallery" activeClassName="active">Gallery</NavLink></li>
+                    <li><NavLink to="/Products" activeClassName="active">Products</NavLink></li>
+                    <li><NavLink to="/Reviews" activeClassName="active">Reviews</NavLink></li>
                 </ul>
             </nav>
 

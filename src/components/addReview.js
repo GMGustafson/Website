@@ -49,7 +49,6 @@ export default function AddReview(props) {
                   <label className="name-id">Company Name:</label>
                   <input className = "Company-name" type="text" name="Companies-Name" required/>
 
-                  
           
                   <label className="message-id">Review:</label>
                   <textarea id="message" name="Review" required></textarea>

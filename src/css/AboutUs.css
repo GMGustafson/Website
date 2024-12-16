@@ -2,23 +2,25 @@
 #about-us
 { 
     background-color:var(--third-color);
-    margin-bottom: 5px;
 }
+
+.aboutus-content {
+    padding:60px 100px;
+    color:white;  
+}
+
+.aboutus-content h3 {
+    font-size:32px;
+}
+
 #about-us11
 {
-    background-color:var(--seventh-color);
-    margin: 5px; 
-    border: 2px solid black; 
-    box-shadow: 5px 5px;
-    padding-left: 15px;  
+    background-color:black; 
+    
 }
 #about-us22
 {
-    background-color:var(--seventh-color);
-    margin: 5px;
-    border: 2px solid black; 
-    box-shadow: 5px 5px; 
-    padding-left: 15px; 
+    background-color:var(--third-color);
 }
 
 #font
@@ -26,11 +28,12 @@
     font-size: 23px;
 }
 
+#about-us1 {
+    justify-content:stretch;    
+}
+
 .aboutus-pictures 
-{
-    max-width: 90%;
-    max-height: 75%;
-    border:3px solid black;
+{   max-width:40%;
 }
 
 #about-us1 .one, #about-us2 .one {

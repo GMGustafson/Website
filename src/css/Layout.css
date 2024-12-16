@@ -19,12 +19,9 @@
     padding: 5px;
 }
 
-#main-nav li:hover {
-    background-color:var(--third-color);
-}
 
 .active {
-    background-color: var(--third-color);
+  border-bottom: white 2px solid;
 }
 #main-nav a
 {
@@ -43,7 +40,7 @@
     background-image: url(../../public/MPTimages/nav-pic.png);
     background-size: 100%;
     width:100px;
-    height: 20px;
+    max-height: 100%;
   }
 
 /* apply to 600px or bigger */
