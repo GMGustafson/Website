@@ -64,7 +64,7 @@ const Review = (props) => {
 
             <section className="info">
               <header className="columns">
-                <h3>{review.companyName}</h3>
+                <h3 id="company-name">{review.companyName}</h3>
 
               </header>
               <p>"{review.review}"</p>

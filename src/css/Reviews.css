@@ -4,16 +4,19 @@
   background: white; 
   padding: 10px; 
   margin: 20px; 
-  width:70%; 
+  width:80%; 
   border:5px solid var(--primary-color);
   box-shadow: 10px 10px;
+  padding: 20px;
+  margin-top: 20px; 
+  margin-bottom: 20px;
 }
 
 #company-name
 { 
     color:#8a3134; 
     font-weight: bold;
-    font-size: 26px;
+    font-size: 30px;
    font: modern serif; 
 }
 p
@@ -35,16 +38,18 @@ p
     background-color: #8a3134;
     color: white;
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     border: none;
     cursor: pointer;
     width: 100%;
     font-size: 20px;
-    margin-left:20px; 
+    
+
 }
 .company
 { 
     flex: 20%;
+    margin: auto;
 }
 
 .reviews-grid
@@ -54,7 +59,7 @@ p
     align-content: center;
     margin:auto;
     justify-content: center;
-    
+    padding-left: 70px;
 }
 #change-buttons {
     margin-top: 10px;

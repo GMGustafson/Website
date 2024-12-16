@@ -23,11 +23,12 @@ export default function AddReview(props) {
       if (data.success) {
         setResult("Form Submitted Successfully");
         event.target.reset();
-        props.closeDialog();
+        
       } else {
         console.log("Error", data);
         setResult(data.message);
       }
+      props.closeDialog();
     };
 
     const closeForm = () => {

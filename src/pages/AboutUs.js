@@ -27,7 +27,7 @@ const AboutUs = () => {
                 <p  id ="font"> We invite you to explore our services, reach out with any questions, and experience the Mackin Pallet & Trucking difference.   </p>
             </section>
 
-            <img className="aboutus-pictures" src = "MPTimages/jen&dan.jpg" /> 
+            <img className="aboutus-pictures" src = "MPTimages/papa&truck.jpg" /> 
 
         </div>
     </div>  

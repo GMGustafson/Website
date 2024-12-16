@@ -13,7 +13,7 @@ const Gallery = () => {
             <div id="gallery-content"> 
                 {images.map((image, index) => (
                     <ModalImage
-                        small={image}
+                        small={Small}
                         large={image}
                         alt={`Gallery image ${image}`}
                         className="columns"

@@ -35,7 +35,7 @@ const Reviews = () => {
         <div id="background"> 
             <h1 id="page-heading">Reviews</h1>
 
-            <href id="add-review"onClick={openAddDialog}> Submit Review</href>
+            <button id="add-review"onClick={openAddDialog}> Submit Review</button>
             
             {showAddDialog ? (
                 <AddReview closeDialog={closeAddDialog} /> ):("")}

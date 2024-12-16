@@ -107,9 +107,10 @@ button[type="submit"]:hover {
 
 #result
 {
-    color: #000000;
+    color: white;
     font-size: 20px;
     font-weight: bold;
+   
     padding-left:20px;
 
 }
