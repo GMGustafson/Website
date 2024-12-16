@@ -28,10 +28,10 @@ header
 
 /* apply to 600px or bigger */
 @media only screen and (min-width:768px){
-     .columns
+     /* .columns
      { 
          display:flex; 
-     }
+     } */
      #logo1
     { 
         max-height: 100px;

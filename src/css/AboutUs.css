@@ -54,4 +54,8 @@
     .two {
         flex:2;
     }
+    .aboutus-pictures {   
+        display: none;
+    }
+
 }

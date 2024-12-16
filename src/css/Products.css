@@ -50,4 +50,11 @@ h1
     { 
         display:flexbox;
     }
+
+    #products-page
+    { 
+        align-items: center;
+        margin: auto; 
+        padding: auto;
+    }
 }
