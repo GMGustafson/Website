@@ -22,7 +22,7 @@ const Layout = () => {
 
             <nav id="main-nav">
                 <div id="hamburger" onClick={toggleNav}>
-                    <div></div>
+                    <img src="/MPTimages/nav-pic.png" alt="hamburger" />
                 </div>
                 <ul id="nav-items" className={`flex-container ${navOpen ? "" : "hide"}`}>
                     <li><NavLink to="/" activeClassName="active">Home</NavLink></li>

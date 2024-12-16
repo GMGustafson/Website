@@ -12,12 +12,12 @@ const Gallery = () => {
         <div id="background">
             <h1 id="page-heading">Gallery</h1>
             <div id="gallery-content"> 
-                {images.map((image, index) => (
+                {Small.map((image, index) => (
                     <ModalImage
-                        small={image}
-                        large={image}
-                        alt={`Gallery image ${image}`}
-                        className="columns"
+                        small={Small[index]}
+                        large={Big[index]}
+                        alt={`Gallery image`}
+                        className="gallery-image"
                      />
                 ))}
             </div>

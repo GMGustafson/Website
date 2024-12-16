@@ -17,9 +17,9 @@ const ContactUs = () => {
         <>
             <div id="contact-us"> 
                 <h1 id="page-heading">Contact Us</h1> 
-                <div className="contacts, columns">
+                <div className="contacts columns">
                     {contacts.map(contact => (
-                        <section id={contact.id} className="one">
+                        <section id={contact.id} className="person">
                             <img id={`${contact.id}-pic`} src={`${contact.imgSrc}`} alt={`${contact.name}'s picture`} />
                             <section id={`${contact.id}-info`}>
                                 <p id="name">{contact.name}</p>

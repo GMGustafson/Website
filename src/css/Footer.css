@@ -6,6 +6,8 @@ footer
     margin: auto;
     text-align: center;
     justify-content: center;
+    border-top:20px solid var(--third-color);
+    padding-top:10px;
 
 }
 

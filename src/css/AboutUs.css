@@ -9,6 +9,10 @@
     color:white;  
 }
 
+.aboutus-pictures {   
+    display: none;
+}
+
 .aboutus-content h3 {
     font-size:32px;
 }
@@ -32,9 +36,6 @@
     justify-content:stretch;    
 }
 
-.aboutus-pictures 
-{   max-width:40%;
-}
 
 #about-us1 .one, #about-us2 .one {
     width:100%;
@@ -42,7 +43,7 @@
 }
 
 
-@media only screen and (min-width:768x){
+@media only screen and (min-width:768px){
     .five {
         flex:5;
     }
@@ -54,8 +55,13 @@
     .two {
         flex:2;
     }
-    .aboutus-pictures {   
-        display: none;
-    }
+
+    .aboutus-pictures 
+    {   
+        display:block;
+        max-width:40%;
+    }  
+
+   
 
 }

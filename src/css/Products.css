@@ -2,15 +2,20 @@
     {
     background:white; 
     padding: 10px; 
-    margin: 20px; 
+    margin: 20px auto; 
     width:70%; 
     border:5px solid var(--primary-color);
     box-shadow: 5px 5px;
     font-size: 20px;
     text-align: center;
-
     }
+
+#pricing-delivery
+{ 
+    margin-bottom:0;
+}
 ul
+
     { 
     list-style-type: none;
     text-align: center;
@@ -21,9 +26,7 @@ ul
     }
     #product-pic
     { 
-        max-width: 400px;
-        max-height: 400px;
-    
+       max-width: 90%;
     }
 
 h1
@@ -45,9 +48,10 @@ h1
     color:white; 
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (min-width:800px){
     #OtherProducts, #Pallets, #Trucking, #pricing-delivery
     { 
+        margin:20px;
         display:flexbox;
     }
 
@@ -56,5 +60,11 @@ h1
         align-items: center;
         margin: auto; 
         padding: auto;
+    }
+    #product-pic
+    { 
+        max-width: 400px;
+        max-height: 400px;
+    
     }
 }

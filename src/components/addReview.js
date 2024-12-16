@@ -4,7 +4,6 @@ import {useState, useEffect } from "react";
 
 export default function AddReview(props) {
     const [result, setResult] = useState([]);
-    const [isFormVisible, setFormVisible] = useState(true);
 
     const onSubmit = async (event) => {
       event.preventDefault();
@@ -31,13 +30,8 @@ export default function AddReview(props) {
       props.closeDialog();
     };
 
-    const closeForm = () => {
-      setFormVisible(false);
-    };
-
   return (
     <>  
-      {isFormVisible ? (
         <div id="add-dialog" className="w3-modal">
           <section className="reviews-form"> 
             <div id="review-frame" class="columns">
@@ -45,7 +39,7 @@ export default function AddReview(props) {
                 <form id="review-form" class="one" onSubmit={onSubmit}>
                 
                   {/* <h3> Review Form </h3> */}
-                  <button id="close-button" type="button" className="close-button" onClick={closeForm}>X</button>
+                  <button id="close-button" type="button" className="close-button" onClick={props.closeDialog}>X</button>
 
                   <label className="name-id">Company Name:</label>
                   <input className = "Company-name" type="text" name="Companies-Name" required/>
@@ -56,10 +50,7 @@ export default function AddReview(props) {
 
                   <label className="name-id">Reviewers Name:</label>
                   <input className = "reviewers-name" type="text" name="Reviewers_Name" required/>
-          
-                  {/* <label className="photo-id">Upload Company Photo:</label>
-                  <input className="photo-upload" type="file" name="photo" accept="image/*" required/> 
-                  Cant do with free version of form */}
+        
 
                   <button id="button" type="submit" >Submit Form</button>
 
@@ -69,7 +60,6 @@ export default function AddReview(props) {
 
           </section>
         </div>
-      ) : ""}
     </>
   );
 

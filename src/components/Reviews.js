@@ -25,11 +25,7 @@ const Reviews = () => {
         setShowAddDialog(false);
       };
 
-      const updateReviews= (Review) => {
-        console.log("In update review " + Review.companyName);
-        setReviews((reviews) => [...reviews, Review]);
-      };
-    
+     
 
     return (
         <div id="background"> 
