@@ -15,8 +15,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => { 
   return (
-   // <BrowserRouter basename={process.env.PUBLIC_URL}>
-   <BrowserRouter basename="/Website">
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
+   {/* </BrowserRouter><BrowserRouter basename="/Website"> */}
     <Routes>
       <Route path ="/" element={(<Layout/>)}>
         <Route index element={(<Home />)} />
