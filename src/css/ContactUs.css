@@ -56,6 +56,19 @@
     }
 }
 
-@media only screen and (min-width:800px){
+@media only screen and (min-width:400px){
+    #papa-pic , #mom-pic, #nana-pic 
+{ 
+    max-width: 275px;
+    max-height: 275px;
+    display:block;
+    margin:auto;
+}
+
+#mom
+{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
     
 }
