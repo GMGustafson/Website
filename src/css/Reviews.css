@@ -73,7 +73,7 @@ p
   }
 
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:300px){
     #company
     { 
         flex-wrap: flex;
